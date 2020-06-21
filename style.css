@@ -20,18 +20,29 @@ header h1 {
     padding:0;
     margin-top:20px;
     padding-top:20px;
+    padding-bottom:0;
+    margin-bottom:0;
 } 
+
+header p {
+    margin:0;
+    padding:0;
+}
 h1, h2 {
 font-family: 'Volkhov', serif;
 }
 .subhead {
     color:gray;
     font-size:.8em;
+    margin-top:0;
+    padding-top:0;
 }
 
 .subhead p {
     display:inline-block;
     vertical-align: middle;
+    margin-top:0;
+    padding-top:0;
 }
 
 .subhead p::after {
@@ -52,7 +63,35 @@ font-family: 'Volkhov', serif;
 }
 
 article {
-
     margin:auto;
     max-width:700px;
+}
+
+article h1 {
+    padding-top:30px;
+    border-bottom:2px dashed gray;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+.code-snipet {
+    background-color:rgb(61, 65, 89);
+    color: rgb(237, 198, 72);
+    padding:22px;
+    border-radius:5px;
+    margin-left:5%;
+    margin-right:5%;
+    box-shadow:0 10px 10px gray;
+}
+
+.code-highlight {
+    color:white;
+}
+
+.code-comment {
+    color:rgb(3, 187, 187);
+    padding-left:80px;
+}
+
+.code-block {
+    padding-left:50px;
 }

@@ -13,15 +13,34 @@
     <p>My notes on learning Javascript and all things web dev related</p>
     </header>
     <article>
-        <h2>Looping through JS Objects</h2>
+        <h1>Looping through JS Objects</h1>
         <div class='subhead'>
             <p class='date'>7/20/2020</p>
             <p class='tech'>javascript</p>
-            <p class='deets'>looping through objects</p>
+            <p class='deets'>loops</p>
         </div>
         <p>A JS Object is a particular data structure that has key and value pairs.  It looks a lot like an array.  But it's not quite the same.  However, there are some ways of extracting the keys and values from the object so that we can treat it like an array and work with it as though it were just any old array.</p>
         <a href="https://zellwk.com/blog/looping-through-js-objects/" class='textlink'>
         Article on looping through js objects</a>
+    </article>
+
+    <article>
+        <h1>Indexing using the forEach() method</h1>
+        <div class='subhead'>
+            <p class='date'>7/21/2020</p>
+            <p class='tech'>javascript</p>
+            <p class='deets'>indexing</p>
+        </div>
+        <p>When using the forEach method to loop through an array, you can actually pass your function both the array element at each index, as well as the index itself</p>
+        <div class='code-snipet'>
+        myArray = ["apple","pear","orange","banana"];<br>
+        options.<span class='code-highlight'>forEach( function(option, index)</span> {<br>
+            <div class='code-block'>
+               &nbsp;&nbsp;&nbsp;&nbsp;var fruit = option; <span class='code-comment'> // apple / pear / orange/ ...</span><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;var fruitIndex = index; <span class='code-comment'>// 0 / 1 / 2 / 3 / ...</span><br>
+            </div>
+          });
+        </div>
     </article>
     <script src="js.js"></script>
 </body>
