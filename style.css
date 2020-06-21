@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+header {
+
+    margin:auto;
+    max-width:700px;
+    border-bottom:12px solid gray;
+
+}
+header h1 {
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: -.05rem;
+    font-size:2.4em;
+    margin:0;
+    padding:0;
+    margin-top:20px;
+    padding-top:20px;
+} 
+h1, h2 {
+font-family: 'Volkhov', serif;
+}
+.subhead {
+    color:gray;
+    font-size:.8em;
+}
+
+.subhead p {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.subhead p::after {
+    content: ' | ';
+    font-size:1.5rem;
+    color:#aaaaaa;
+    vertical-align: middle;
+}
+
+.textlink {
+    color:blue;
+    text-decoration:none;
+}
+
+.textlink:hover {
+    color:rgb(67, 122, 240);
+    text-decoration:underline;
+}
+
+article {
+
+    margin:auto;
+    max-width:700px;
+}
