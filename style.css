@@ -62,6 +62,11 @@ font-family: 'Volkhov', serif;
     text-decoration:underline;
 }
 
+.terminal-command {
+    background-color:#dddddd;
+    padding:20px;
+}
+
 article {
     margin:auto;
     max-width:700px;
@@ -95,3 +100,4 @@ article h1 {
 .code-block {
     padding-left:50px;
 }
+
