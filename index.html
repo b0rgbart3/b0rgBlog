@@ -56,6 +56,24 @@
         </div>
         <p><a href='http://sassbreak.com/watch-your-sass/' class='textlink'>Watch Yo' Sass</a></p>
     </article>
+
+    <article>
+        <h1> CORS Errors- Part 1: a brief introduction</h1>
+       <p>
+        Any web developer can tell you horror stories about dealing with CORS errors.
+        Ah, the DREADED CORS Errors. As a web developer, you become familiar with the astounding array of pre-built libraries of code that are accessible to you via github and npm. And add to that all of the publicly accessible API's that are available for you to use such as the ones built by giants like Google or the New York Times. But as soon as you learn about these amazing resources, and begin trying to use them, you will find yourself in the land of the dreaded, ugly CORS errors which will bring your app development to a screeching halt.</p>
+        <h2>
+        So first of all, what is CORS, or more to the point, what is a CORS error?</h2>
+        <p>
+        A CORS error occurs when you attempt to access code from a different server. It's a safety measure that browsers have implemented to not allow code to run from multiple servers, unless those servers are explicitly designated as being allowed to run code. And this is a good thing. It can go a long way to protecting your app from getting hacked, and having your users data hacked.</p>
+        <p>
+        But if you can't run code that is coming from a different server than your own, doesn't that mean you will run into CORS errors almost every single time you try to use someone else's existing libraries? Uh, yea. Pretty much.</p>
+        <p>
+        Don't panic - there is a solution. The solution to CORS errors - is CORS itself. It is a mechanism that defines the way we communicate with other servers in our applications. The mechanism involves setting up what is known as a "pre-flight" request which has some specific information in the headers, before sending out the full request to an outside API. Once that handshake is made, our request should go through normally.
+    </p>
+    <a href="https://ionicframework.com/docs/troubleshooting/cors#:~:text=CORS%20errors%20are%20common%20in,present%20on%20the%20requested%20resource." class='textlink'>A pretty good explanation of CORS</a><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#:~:text=Cross%2DOrigin%20Resource%20Sharing%20(CORS)%20is%20a%20mechanism%20that,resources%20from%20a%20different%20origin." class='textlink'>The MDN explanation</a>
+    </article>
     <script src="js.js"></script>
 </body>
 </html>
